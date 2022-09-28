@@ -3,9 +3,16 @@
 @section('page_title', 'Catalogo film')
 
 @section('content')
-<h1>Benvenuto catalogo film (TO BE COMPLETED)</h1>
-
-@foreach ($movies as $movie)
-    <li> titolo: {{$movie->title}} </li>
-@endforeach
+<h1>Benvenuto catalogo film</h1>
+<div>
+    <ul>
+        @foreach ($movies as $movie)
+        <li>Titolo: {{$movie->title}}</li>
+        <li>Titolo originale: {{$movie->original_title}}</li>
+        <li>Anno: {{$movie->date}}</li>
+        <li>Voto: {{$movie->vote}}</li>
+        <li>Nazionalità: {{$movie->nationality}}</li>
+        @endforeach
+    </ul>
+</div>
 @endsection
