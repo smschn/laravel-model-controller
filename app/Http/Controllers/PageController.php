@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Movie;
+use App\Movie; // richiamo il MODEL 'Movie' per poterlo usare dentro le funzioni, insieme ai metodi specifici di Laravel per ottenere dati dal database tramite il MODEL.
 
 class PageController extends Controller
 {
