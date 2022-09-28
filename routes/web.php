@@ -18,3 +18,5 @@ Route::get('/', function () {
 })->name('homepage');
 
 Route::get('/movies', 'PageController@index')->name('movies');
+
+Route::get('/best', 'PageController@bestMovie')->name('best');
