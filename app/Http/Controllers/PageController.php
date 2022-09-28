@@ -10,6 +10,6 @@ class PageController extends Controller
 {
     public function index() {
         $movies = Movie::all();
-        return view('movies', compact('movies')); // ['movies' => $movies]
+        return view('movies', compact('movies')); // compact('movies') è come scrivere ['movies' => $movies]
     }
 }

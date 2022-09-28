@@ -1,1 +1,55 @@
-//
+// general rules
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.d_flex {
+    display: flex;
+}
+
+.jc_center {
+    justify-content: center;
+}
+
+.ai_center {
+    align-items: center;
+}
+
+// variables
+$bg1:#52796f;
+$bg2:#84a98c;
+
+// scss
+
+html {
+    text-align: center;
+}
+
+header,
+footer {
+    height: 100px;
+    background-color: $bg1;
+    line-height: 100px;
+
+    li {
+        margin: 0 20px;
+        list-style: none;
+
+        a {
+            text-decoration: none;
+            color: black;
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}
+
+main {
+    height: calc(100vh - 200px);
+    background-color: $bg2;
+}

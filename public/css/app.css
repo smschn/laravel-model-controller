@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.d_flex {
+  display: flex;
+}
+
+.jc_center {
+  justify-content: center;
+}
+
+.ai_center {
+  align-items: center;
+}
+
+html {
+  text-align: center;
+}
+
+header,
+footer {
+  height: 100px;
+  background-color: #52796f;
+  line-height: 100px;
+}
+
+header li,
+footer li {
+  margin: 0 20px;
+  list-style: none;
+}
+
+header li a,
+footer li a {
+  text-decoration: none;
+  color: black;
+}
+
+header li a:hover,
+footer li a:hover {
+  color: white;
+}
+
+main {
+  height: calc(100vh - 200px);
+  background-color: #84a98c;
+}
+
