@@ -1,6 +1,6 @@
 @extends('layout_structure.app')
 
-@section('page_title', 'Catalogo film')
+@section('page_title', 'Miglior film per voto')
 
 @section('content')
 
