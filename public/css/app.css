@@ -16,6 +16,14 @@
   align-items: center;
 }
 
+.f_wrap {
+  flex-wrap: wrap;
+}
+
+.f_basis {
+  flex-basis: 25%;
+}
+
 html {
   text-align: center;
 }
@@ -37,6 +45,7 @@ header li a,
 footer li a {
   text-decoration: none;
   color: black;
+  position: relative;
 }
 
 header li a:hover,
@@ -45,7 +54,26 @@ footer li a:hover {
 }
 
 main {
-  height: calc(100vh - 200px);
+  min-height: calc(100vh - 200px);
   background-color: #84a98c;
+}
+
+main h1 {
+  padding-top: 20px;
+}
+
+main section {
+  max-width: 90%;
+  margin: 50px auto;
+}
+
+main section div {
+  margin: 30px;
+  padding: 10px;
+  border: 1px solid #52796f;
+}
+
+main section li {
+  list-style: none;
 }
 

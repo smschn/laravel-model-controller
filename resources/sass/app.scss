@@ -18,7 +18,16 @@
     align-items: center;
 }
 
+.f_wrap {
+    flex-wrap: wrap;
+}
+
+.f_basis {
+    flex-basis: 25%;
+}
+
 // variables
+
 $bg1:#52796f;
 $bg2:#84a98c;
 
@@ -41,6 +50,7 @@ footer {
         a {
             text-decoration: none;
             color: black;
+            position: relative;
 
             &:hover {
                 color: white;
@@ -50,6 +60,25 @@ footer {
 }
 
 main {
-    height: calc(100vh - 200px);
+    min-height: calc(100vh - 200px);
     background-color: $bg2;
+
+    h1 {
+        padding-top: 20px;
+    }
+
+    section {
+        max-width: 90%;
+        margin: 50px auto;
+
+        div {
+            margin: 30px;
+            padding: 10px;
+            border: 1px solid $bg1;
+        }
+
+        li {
+            list-style: none;
+        }
+    }
 }
